@@ -1,0 +1,59 @@
+/*============================== GERAL ==============================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+
+    font-size: 62.5%;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/*============================== HEADER ==============================*/
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--purple-bg);
+    align-items: center;
+    padding-block: 4rem;
+}
+
+.header .navigation .menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.header .navigation .menu .item-menu a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.header .search input{
+    background-color: var(--dark-bg);
+    padding-block: 1.5rem;
+    padding-inline: 4rem;
+    border: none;
+}
