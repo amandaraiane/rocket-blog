@@ -51,9 +51,39 @@ li{
     color: var(--white);
 }
 
+.header .navigation .menu .item-menu.selected a{
+    font-weight: 700;
+    border-left: .2rem solid var(--green);
+    padding-left: .3rem;
+}
+
+.header .search{
+    display: flex;
+}
+
 .header .search input{
     background-color: var(--dark-bg);
     padding-block: 1.5rem;
     padding-inline: 4rem;
     border: none;
+    color: var(--light-purple);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.header .search input:focus{
+    border: none;
+    outline: 0;
+}
+
+.header .search input::placeholder{
+    color: var(--light-purple);
+}
+
+.header .search .btn-search{
+    background-color: var(--button-bg);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0 .5rem .5rem 0;
+    cursor: pointer;
 }
